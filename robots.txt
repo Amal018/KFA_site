@@ -5,5 +5,5 @@ Disallow: /submit-enquiry.php
 Disallow: /save-lead.php
 Disallow: /private/
 
-# Replace the domain below with your live domain
-Sitemap: https://www.kalalayafinearts.com/sitemap.xml
+
+Sitemap: https://kfasite.netlify.app/sitemap.xml
