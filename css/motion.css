@@ -81,7 +81,7 @@
 @keyframes cue { 0% { opacity: 0; transform: translateY(0); } 40% { opacity: 1; } 100% { opacity: 0; transform: translateY(14px); } }
 
 /* 5. MARQUEE ---------------------------------------------------------- */
-.marquee { overflow: hidden; background: var(--color-heading); color: #fff; padding: 14px 0; transform: rotate(-1.2deg); margin: -6px -10px 0; position: relative; z-index: 2; }
+.marquee { overflow: hidden; background: var(--color-heading); color: #fff; padding: 14px 0; margin: 0; position: relative; z-index: 2; }
 .marquee__track { display: flex; width: max-content; animation: marquee 38s linear infinite; }
 .marquee__track span { font-family: var(--font-serif); font-size: clamp(1rem, 1.6vw, 1.35rem); padding: 0 26px; white-space: nowrap; display: flex; align-items: center; gap: 26px; }
 .marquee__track span::after { content: "✦"; color: var(--paint-yellow); font-size: .8em; }

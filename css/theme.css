@@ -515,3 +515,25 @@ a:hover { color: var(--color-primary); }
     .landing-course { grid-template-columns: 1fr; }
     .landing-course img { min-height: 0; aspect-ratio: 16 / 9; }
 }
+
+/* === Real photos: students, certificates, achievers, team === */
+.student-grid .student-card img { aspect-ratio: 3 / 4; object-fit: cover; object-position: top; }
+.profile__photo img { aspect-ratio: 3 / 4; object-position: top; }
+.master-grid .art-card__img img { aspect-ratio: 4 / 5; }
+.cert-main img { aspect-ratio: 3 / 4; object-fit: contain; background: #F7F1E6; }
+.cert-side { grid-template-columns: 1fr 1fr; align-content: center; }
+.cert-side img { aspect-ratio: 3 / 4; object-fit: contain; background: #F7F1E6; }
+.achiever-cards { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.achiever-cards .thumb { display: block; width: 100%; }
+.achiever-cards .thumb img { aspect-ratio: 9 / 16; object-fit: cover; }
+.team-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 260px)); gap: 28px; justify-content: center; }
+.team-grid figure { margin: 0; text-align: center; }
+.team-grid img { width: 100%; height: auto; border-radius: var(--radius); box-shadow: var(--shadow-soft); }
+.team-grid figcaption { margin-top: 12px; display: grid; gap: 2px; }
+.team-grid figcaption b { font-family: var(--font-serif); font-weight: 500; font-size: 1.1rem; color: var(--color-heading); }
+.team-grid figcaption span { font-size: 13.5px; color: var(--color-secondary); }
+@media (max-width: 760px) {
+    .achiever-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+}
+.artwork-grid .art-card__img img { aspect-ratio: 1 / 1; object-fit: contain; padding: 10px; background: var(--color-bg-soft, #FBF7F2); }
