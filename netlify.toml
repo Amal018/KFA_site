@@ -1,0 +1,301 @@
+﻿plugins = []
+
+[functions]
+
+  [functions."*"]
+
+[build]
+publish = "."
+
+  [build.processing]
+
+    [build.processing.css]
+
+    [build.processing.html]
+
+    [build.processing.images]
+
+    [build.processing.js]
+
+  [build.services]
+
+[[headers]]
+for = "/*"
+
+  [headers.values]
+  X-Content-Type-Options = "nosniff"
+  X-Frame-Options = "SAMEORIGIN"
+  Referrer-Policy = "strict-origin-when-cross-origin"
+  Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+[[headers]]
+for = "/assets/*"
+
+  [headers.values]
+  Cache-Control = "public, max-age=2592000"
+
+[[headers]]
+for = "/css/*"
+
+  [headers.values]
+  Cache-Control = "public, max-age=604800"
+
+[[headers]]
+for = "/js/*"
+
+  [headers.values]
+  Cache-Control = "public, max-age=604800"
+
+[[headers]]
+for = "/student-gallery/*.svg"
+
+  [headers.values]
+  Content-Security-Policy = "script-src 'none'"
+
+[[headers]]
+for = "/talented-students/*.svg"
+
+  [headers.values]
+  Content-Security-Policy = "script-src 'none'"
+
+[[redirects]]
+from = "/blog.php"
+to = "/blog/:post.html"
+status = 200
+force = false
+
+  [redirects.query]
+  post = ":post"
+
+  [redirects.conditions]
+
+  [redirects.headers]
+
+[[redirects]]
+from = "/student-gallery.php"
+to = "/students/:id.html"
+status = 200
+force = false
+
+  [redirects.query]
+  student = ":id"
+
+  [redirects.conditions]
+
+  [redirects.headers]
+
+[[redirects]]
+from = "/index.php"
+to = "/index.html"
+status = 200
+force = false
+
+  [redirects.query]
+
+  [redirects.conditions]
+
+  [redirects.headers]
+
+[[redirects]]
+from = "/about.php"
+to = "/about.html"
+status = 200
+force = false
+
+  [redirects.query]
+
+  [redirects.conditions]
+
+  [redirects.headers]
+
+[[redirects]]
+from = "/courses.php"
+to = "/courses.html"
+status = 200
+force = false
+
+  [redirects.query]
+
+  [redirects.conditions]
+
+  [redirects.headers]
+
+[[redirects]]
+from = "/course-details.php"
+to = "/course-details.html"
+status = 200
+force = false
+
+  [redirects.query]
+
+  [redirects.conditions]
+
+  [redirects.headers]
+
+[[redirects]]
+from = "/gallery.php"
+to = "/gallery.html"
+status = 200
+force = false
+
+  [redirects.query]
+
+  [redirects.conditions]
+
+  [redirects.headers]
+
+[[redirects]]
+from = "/achievements.php"
+to = "/achievements.html"
+status = 200
+force = false
+
+  [redirects.query]
+
+  [redirects.conditions]
+
+  [redirects.headers]
+
+[[redirects]]
+from = "/events.php"
+to = "/events.html"
+status = 200
+force = false
+
+  [redirects.query]
+
+  [redirects.conditions]
+
+  [redirects.headers]
+
+[[redirects]]
+from = "/contact.php"
+to = "/contact.html"
+status = 200
+force = false
+
+  [redirects.query]
+
+  [redirects.conditions]
+
+  [redirects.headers]
+
+[[redirects]]
+from = "/blog.php"
+to = "/blog.html"
+status = 200
+force = false
+
+  [redirects.query]
+
+  [redirects.conditions]
+
+  [redirects.headers]
+
+[[redirects]]
+from = "/drawing-classes-coimbatore.php"
+to = "/drawing-classes-coimbatore.html"
+status = 200
+force = false
+
+  [redirects.query]
+
+  [redirects.conditions]
+
+  [redirects.headers]
+
+[[redirects]]
+from = "/painting-classes-coimbatore.php"
+to = "/painting-classes-coimbatore.html"
+status = 200
+force = false
+
+  [redirects.query]
+
+  [redirects.conditions]
+
+  [redirects.headers]
+
+[[redirects]]
+from = "/art-classes-coimbatore.php"
+to = "/art-classes-coimbatore.html"
+status = 200
+force = false
+
+  [redirects.query]
+
+  [redirects.conditions]
+
+  [redirects.headers]
+
+[[redirects]]
+from = "/student-gallery.php"
+to = "/student-gallery.html"
+status = 200
+force = false
+
+  [redirects.query]
+
+  [redirects.conditions]
+
+  [redirects.headers]
+
+[[redirects]]
+from = "/submit-enquiry.php"
+to = "/contact.html"
+status = 302
+force = false
+
+  [redirects.query]
+
+  [redirects.conditions]
+
+  [redirects.headers]
+
+[[redirects]]
+from = "/save-lead.php"
+to = "/"
+status = 302
+force = false
+
+  [redirects.query]
+
+  [redirects.conditions]
+
+  [redirects.headers]
+
+[[redirects]]
+from = "/includes/*"
+to = "/404.html"
+status = 404
+force = false
+
+  [redirects.query]
+
+  [redirects.conditions]
+
+  [redirects.headers]
+
+[[redirects]]
+from = "/private/*"
+to = "/404.html"
+status = 404
+force = false
+
+  [redirects.query]
+
+  [redirects.conditions]
+
+  [redirects.headers]
+
+[[redirects]]
+from = "/blog-posts/*"
+to = "/404.html"
+status = 404
+force = false
+
+  [redirects.query]
+
+  [redirects.conditions]
+
+  [redirects.headers]
