@@ -46,256 +46,124 @@ for = "/js/*"
   [headers.values]
   Cache-Control = "public, max-age=604800"
 
-[[headers]]
-for = "/student-gallery/*.svg"
-
-  [headers.values]
-  Content-Security-Policy = "script-src 'none'"
-
-[[headers]]
-for = "/talented-students/*.svg"
-
-  [headers.values]
-  Content-Security-Policy = "script-src 'none'"
-
-[[redirects]]
-from = "/blog.php"
-to = "/blog/:post.html"
-status = 200
-force = false
-
-  [redirects.query]
-  post = ":post"
-
-  [redirects.conditions]
-
-  [redirects.headers]
-
+# Clean URLs: old .php addresses permanently redirect to the new ones
 [[redirects]]
 from = "/student-gallery.php"
-to = "/students/:id.html"
-status = 200
-force = false
-
+to = "/students/:id"
+status = 301
+force = true
   [redirects.query]
   student = ":id"
 
-  [redirects.conditions]
-
-  [redirects.headers]
+[[redirects]]
+from = "/blog.php"
+to = "/blog/:post"
+status = 301
+force = true
+  [redirects.query]
+  post = ":post"
 
 [[redirects]]
 from = "/index.php"
-to = "/index.html"
-status = 200
-force = false
-
-  [redirects.query]
-
-  [redirects.conditions]
-
-  [redirects.headers]
+to = "/"
+status = 301
+force = true
 
 [[redirects]]
 from = "/about.php"
-to = "/about.html"
-status = 200
-force = false
-
-  [redirects.query]
-
-  [redirects.conditions]
-
-  [redirects.headers]
+to = "/about"
+status = 301
+force = true
 
 [[redirects]]
 from = "/courses.php"
-to = "/courses.html"
-status = 200
-force = false
-
-  [redirects.query]
-
-  [redirects.conditions]
-
-  [redirects.headers]
+to = "/courses"
+status = 301
+force = true
 
 [[redirects]]
 from = "/course-details.php"
-to = "/course-details.html"
-status = 200
-force = false
-
-  [redirects.query]
-
-  [redirects.conditions]
-
-  [redirects.headers]
+to = "/course-details"
+status = 301
+force = true
 
 [[redirects]]
 from = "/gallery.php"
-to = "/gallery.html"
-status = 200
-force = false
-
-  [redirects.query]
-
-  [redirects.conditions]
-
-  [redirects.headers]
+to = "/gallery"
+status = 301
+force = true
 
 [[redirects]]
 from = "/achievements.php"
-to = "/achievements.html"
-status = 200
-force = false
-
-  [redirects.query]
-
-  [redirects.conditions]
-
-  [redirects.headers]
+to = "/achievements"
+status = 301
+force = true
 
 [[redirects]]
 from = "/events.php"
-to = "/events.html"
-status = 200
-force = false
-
-  [redirects.query]
-
-  [redirects.conditions]
-
-  [redirects.headers]
+to = "/events"
+status = 301
+force = true
 
 [[redirects]]
 from = "/contact.php"
-to = "/contact.html"
-status = 200
-force = false
-
-  [redirects.query]
-
-  [redirects.conditions]
-
-  [redirects.headers]
+to = "/contact"
+status = 301
+force = true
 
 [[redirects]]
 from = "/blog.php"
-to = "/blog.html"
-status = 200
-force = false
-
-  [redirects.query]
-
-  [redirects.conditions]
-
-  [redirects.headers]
+to = "/blog"
+status = 301
+force = true
 
 [[redirects]]
 from = "/drawing-classes-coimbatore.php"
-to = "/drawing-classes-coimbatore.html"
-status = 200
-force = false
-
-  [redirects.query]
-
-  [redirects.conditions]
-
-  [redirects.headers]
+to = "/drawing-classes-coimbatore"
+status = 301
+force = true
 
 [[redirects]]
 from = "/painting-classes-coimbatore.php"
-to = "/painting-classes-coimbatore.html"
-status = 200
-force = false
-
-  [redirects.query]
-
-  [redirects.conditions]
-
-  [redirects.headers]
+to = "/painting-classes-coimbatore"
+status = 301
+force = true
 
 [[redirects]]
 from = "/art-classes-coimbatore.php"
-to = "/art-classes-coimbatore.html"
-status = 200
-force = false
-
-  [redirects.query]
-
-  [redirects.conditions]
-
-  [redirects.headers]
+to = "/art-classes-coimbatore"
+status = 301
+force = true
 
 [[redirects]]
 from = "/student-gallery.php"
-to = "/student-gallery.html"
-status = 200
-force = false
-
-  [redirects.query]
-
-  [redirects.conditions]
-
-  [redirects.headers]
+to = "/student-gallery"
+status = 301
+force = true
 
 [[redirects]]
 from = "/submit-enquiry.php"
-to = "/contact.html"
+to = "/contact"
 status = 302
-force = false
-
-  [redirects.query]
-
-  [redirects.conditions]
-
-  [redirects.headers]
+force = true
 
 [[redirects]]
 from = "/save-lead.php"
 to = "/"
 status = 302
-force = false
-
-  [redirects.query]
-
-  [redirects.conditions]
-
-  [redirects.headers]
+force = true
 
 [[redirects]]
 from = "/includes/*"
 to = "/404.html"
 status = 404
-force = false
-
-  [redirects.query]
-
-  [redirects.conditions]
-
-  [redirects.headers]
 
 [[redirects]]
 from = "/private/*"
 to = "/404.html"
 status = 404
-force = false
-
-  [redirects.query]
-
-  [redirects.conditions]
-
-  [redirects.headers]
 
 [[redirects]]
 from = "/blog-posts/*"
 to = "/404.html"
 status = 404
-force = false
-
-  [redirects.query]
-
-  [redirects.conditions]
-
-  [redirects.headers]

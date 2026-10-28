@@ -311,25 +311,29 @@
                 });
             } else {
                 fd.append('art', pending.toDataURL('image/png'));
-                sendLead = fetch('save-lead.php', { method: 'POST', body: fd, headers: { Accept: 'application/json' }, credentials: 'same-origin' })
+                sendLead = fetch('/save-lead.php', { method: 'POST', body: fd, headers: { Accept: 'application/json' }, credentials: 'same-origin' })
                     .then(function (r) { return r.json().catch(function () { return { ok: false, message: 'Something went wrong. Please try again.' }; }); });
             }
+            // The visitor always gets their drawing; a failed save only changes the thank-you message
+            var finish = function (title) {
+                try { localStorage.setItem(LEAD_KEY, '1'); } catch (x) { /* private mode */ }
+                download(pending);
+                dlg.querySelector('.booking__panel').classList.add('is-done');
+                errBox.textContent = '';
+                dlg.querySelector('#lead-title').textContent = title;
+                setTimeout(function () { closeLead(); dlg.querySelector('.booking__panel').classList.remove('is-done'); }, 2600);
+                leadForm.reset();
+            };
+            var savedLate = 'Your artwork is downloading! We couldn’t save your details just now — please call or WhatsApp us on +91 98424 34219.';
             sendLead
                 .then(function (res) {
-                    if (res.ok) {
-                        try { localStorage.setItem(LEAD_KEY, '1'); } catch (x) { /* private mode */ }
-                        download(pending);
-                        dlg.querySelector('.booking__panel').classList.add('is-done');
-                        errBox.textContent = '';
-                        dlg.querySelector('#lead-title').textContent = res.message || 'Thank you! Your artwork is downloading.';
-                        setTimeout(function () { closeLead(); dlg.querySelector('.booking__panel').classList.remove('is-done'); }, 2200);
-                        leadForm.reset();
-                    } else {
-                        Object.keys(res.errors || {}).forEach(function (k) { setErr(k, res.errors[k]); });
+                    if (res.ok) finish(res.message || 'Thank you! Your artwork is downloading.');
+                    else if (res.errors) {
+                        Object.keys(res.errors).forEach(function (k) { setErr(k, res.errors[k]); });
                         errBox.textContent = res.message || 'Please check the form and try again.';
-                    }
+                    } else finish(savedLate);
                 })
-                .catch(function () { errBox.textContent = 'No connection. Please check your internet and try again.'; })
+                .catch(function () { finish(savedLate); })
                 .then(function () { btn.disabled = false; btn.classList.remove('is-busy'); });
         });
     }

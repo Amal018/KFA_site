@@ -6,4 +6,4 @@ Disallow: /save-lead.php
 Disallow: /private/
 
 
-Sitemap: https://kfasite.netlify.app/sitemap.xml
+Sitemap: https://kalalayafinearts.in/sitemap.xml

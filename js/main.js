@@ -7,7 +7,7 @@
     'use strict';
     var doc = document, body = doc.body;
     var K = (window.Kalalaya = window.Kalalaya || {});
-    var PLACEHOLDER = 'assets/images/placeholder.svg';
+    var PLACEHOLDER = '/assets/images/placeholder.svg';
 
     /* ---------- helpers ---------- */
     K.esc = function (s) {

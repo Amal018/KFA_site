@@ -10,7 +10,8 @@
     var app = document.getElementById('student-app');
     if (!app) return;
 
-    var id = (K.getParam('student') || '').toLowerCase().trim();
+    // /students/<id> (clean URL) or the old ?student=<id>
+    var id = (K.getParam('student') || (location.pathname.match(/\/students\/([^\/.]+)/) || [])[1] || '').toLowerCase().trim();
     var s = null;
     for (var i = 0; i < students.length; i++) if (students[i].id === id) { s = students[i]; break; }
 
@@ -31,7 +32,7 @@
     var md = document.querySelector('meta[name="description"]');
     if (md) md.setAttribute('content', 'Artwork by ' + s.name + ' (' + s.course + ') at Kalalaya Fine Arts, Coimbatore.');
     var photo = document.getElementById('sp-photo');
-    photo.src = s.profile || 'assets/images/placeholder.svg';
+    photo.src = s.profile || '/assets/images/placeholder.svg';
     photo.alt = s.name + ', ' + s.course + ' student at Kalalaya Fine Arts';
     document.getElementById('sp-name').textContent = s.name;
     document.getElementById('sp-meta').innerHTML = K.esc(s.course) + (s.age ? '<span class="sep" aria-hidden="true"></span>Age ' + K.esc(s.age) : '');

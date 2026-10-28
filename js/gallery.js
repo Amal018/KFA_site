@@ -13,11 +13,11 @@
     var total = Math.max(1, Math.ceil(students.length / STUDENTS_PER_PAGE));
     var current = Math.min(Math.max(parseInt(K.getParam('page'), 10) || 1, 1), total);
 
-    function profileOf(s) { return s.profile || 'assets/images/placeholder.svg'; }
+    function profileOf(s) { return s.profile || '/assets/images/placeholder.svg'; }
 
     function card(s) {
         var meta = K.esc(s.course) + (s.age ? '<span class="sep" aria-hidden="true"></span>Age ' + K.esc(s.age) : '');
-        var url = 'student-gallery.php?student=' + encodeURIComponent(s.id);
+        var url = '/students/' + encodeURIComponent(s.id);
         return '<li class="card student-card reveal">' +
             '<img src="' + K.esc(profileOf(s)) + '" alt="' + K.esc(s.name) + ', ' + K.esc(s.course) + ' student" width="400" height="258" loading="lazy">' +
             '<div class="student-card__body"><h3>' + K.esc(s.name) + '</h3><p class="meta">' + meta + '</p>' +
