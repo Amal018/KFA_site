@@ -24,11 +24,11 @@
     <priority>0.9</priority>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/hero/hero-watercolour-palettes.webp</image:loc><image:caption>Watercolour paint palettes, brushes and colourful swatches</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/courses/cat-kids.webp</image:loc><image:caption>Young children smiling at their desks during a Kalalaya art class</image:caption></image:image>
-    <image:image><image:loc>https://kalalayafinearts.in/assets/images/courses/cat-young.webp</image:loc><image:caption>A young artist painting with watercolours at Kalalaya</image:caption></image:image>
-    <image:image><image:loc>https://kalalayafinearts.in/assets/images/courses/cat-teen.webp</image:loc><image:caption>A teenage student painting a watercolour landscape</image:caption></image:image>
+    <image:image><image:loc>https://kalalayafinearts.in/assets/images/courses/cat-young-class.webp</image:loc><image:caption>A young artist painting with watercolours at Kalalaya</image:caption></image:image>
+    <image:image><image:loc>https://kalalayafinearts.in/assets/images/courses/cat-teen-class.webp</image:loc><image:caption>A teenage student painting a watercolour landscape</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/courses/cat-professional.webp</image:loc><image:caption>Senior students practising detailed drawing</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/courses/cat-short-term.webp</image:loc><image:caption>An adult learner painting a watercolour at Kalalaya</image:caption></image:image>
-    <image:image><image:loc>https://kalalayafinearts.in/assets/images/courses/adult-homemaker.webp</image:loc><image:caption>A student painting with fabric colours at the studio</image:caption></image:image>
+    <image:image><image:loc>https://kalalayafinearts.in/assets/images/courses/adults-class.webp</image:loc><image:caption>A student painting with fabric colours at the studio</image:caption></image:image>
   </url>
   <url>
     <loc>https://kalalayafinearts.in/course-details</loc>
@@ -47,7 +47,7 @@
     <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <image:image><image:loc>https://kalalayafinearts.in/assets/images/courses/cat-young.webp</image:loc><image:caption>A young artist painting with watercolours at Kalalaya</image:caption></image:image>
+    <image:image><image:loc>https://kalalayafinearts.in/assets/images/courses/cat-young-class.webp</image:loc><image:caption>A young artist painting with watercolours at Kalalaya</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/courses/detail-kids.webp</image:loc><image:caption>A teacher helping young children with their drawings</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/courses/detail-drawing.webp</image:loc><image:caption>A pencil portrait being drawn in class</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/courses/detail-painting.webp</image:loc><image:caption>A student painting a sunset in acrylics</image:caption></image:image>
@@ -95,13 +95,13 @@
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/master/madonna-and-child.webp</image:loc><image:caption>Painting of the Madonna holding the infant Jesus</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/master/boy-on-tricycle.webp</image:loc><image:caption>Pencil portrait of a young boy riding a tricycle</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/master/portrait-of-a-girl.webp</image:loc><image:caption>Pencil portrait of a smiling girl with long hair</image:caption></image:image>
-    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/ajay/profile-thumb.webp</image:loc><image:caption>Ajay, student at Kalalaya Fine Arts</image:caption></image:image>
-    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/angelin-jeni/profile-thumb.webp</image:loc><image:caption>Angelin Jeni, student at Kalalaya Fine Arts</image:caption></image:image>
-    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/jeslin/profile-thumb.webp</image:loc><image:caption>Jeslin, student at Kalalaya Fine Arts</image:caption></image:image>
-    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/prakalya/profile-thumb.webp</image:loc><image:caption>Prakalya, student at Kalalaya Fine Arts</image:caption></image:image>
-    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/prithwin/profile-thumb.webp</image:loc><image:caption>Prithwin, student at Kalalaya Fine Arts</image:caption></image:image>
-    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/shwetha/profile-thumb.webp</image:loc><image:caption>Shwetha, student at Kalalaya Fine Arts</image:caption></image:image>
-    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/subiksha/profile-thumb.webp</image:loc><image:caption>Subiksha, student at Kalalaya Fine Arts</image:caption></image:image>
+    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/ajay/photo-thumb.webp</image:loc><image:caption>Ajay, student at Kalalaya Fine Arts</image:caption></image:image>
+    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/angelin-jeni/photo-thumb.webp</image:loc><image:caption>Angelin Jeni, student at Kalalaya Fine Arts</image:caption></image:image>
+    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/jeslin/photo-thumb.webp</image:loc><image:caption>Jeslin, student at Kalalaya Fine Arts</image:caption></image:image>
+    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/prakalya/photo-thumb.webp</image:loc><image:caption>Prakalya, student at Kalalaya Fine Arts</image:caption></image:image>
+    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/prithwin/photo-thumb.webp</image:loc><image:caption>Prithwin, student at Kalalaya Fine Arts</image:caption></image:image>
+    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/shwetha/photo-thumb.webp</image:loc><image:caption>Shwetha, student at Kalalaya Fine Arts</image:caption></image:image>
+    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/subiksha/photo-thumb.webp</image:loc><image:caption>Subiksha, student at Kalalaya Fine Arts</image:caption></image:image>
   </url>
   <url>
     <loc>https://kalalayafinearts.in/achievements</loc>
@@ -142,7 +142,7 @@
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/hero/brushes-palette.webp</image:loc></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/courses/cat-kids.webp</image:loc><image:caption>Young children smiling at their desks during a Kalalaya art class</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/courses/detail-drawing.webp</image:loc><image:caption>A pencil portrait being drawn in class</image:caption></image:image>
-    <image:image><image:loc>https://kalalayafinearts.in/assets/images/courses/cat-young.webp</image:loc><image:caption>A young artist painting with watercolours at Kalalaya</image:caption></image:image>
+    <image:image><image:loc>https://kalalayafinearts.in/assets/images/courses/cat-young-class.webp</image:loc><image:caption>A young artist painting with watercolours at Kalalaya</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/courses/detail-professional.webp</image:loc></image:image>
   </url>
   <url>
@@ -171,7 +171,7 @@
     <lastmod>2026-10-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <image:image><image:loc>https://kalalayafinearts.in/assets/images/courses/cat-young.webp</image:loc><image:caption>A young artist painting with watercolours at Kalalaya</image:caption></image:image>
+    <image:image><image:loc>https://kalalayafinearts.in/assets/images/courses/cat-young-class.webp</image:loc><image:caption>A young artist painting with watercolours at Kalalaya</image:caption></image:image>
   </url>
   <url>
     <loc>https://kalalayafinearts.in/blog/tamil-nadu-government-drawing-exam-guide</loc>
@@ -185,7 +185,7 @@
     <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/ajay/profile-thumb.webp</image:loc><image:caption>Ajay, student at Kalalaya Fine Arts</image:caption></image:image>
+    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/ajay/photo-thumb.webp</image:loc><image:caption>Ajay, student at Kalalaya Fine Arts</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/ajay/01-krishna-with-the-calf.webp</image:loc><image:caption>Krishna with the Calf — Watercolour by Ajay</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/ajay/02-kathakali.webp</image:loc><image:caption>Kathakali — Watercolour by Ajay</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/ajay/03-lion.webp</image:loc><image:caption>Lion — Watercolour by Ajay</image:caption></image:image>
@@ -208,7 +208,7 @@
     <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/angelin-jeni/profile-thumb.webp</image:loc><image:caption>Angelin Jeni, student at Kalalaya Fine Arts</image:caption></image:image>
+    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/angelin-jeni/photo-thumb.webp</image:loc><image:caption>Angelin Jeni, student at Kalalaya Fine Arts</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/angelin-jeni/01-umbrellas-in-the-rain.webp</image:loc><image:caption>Umbrellas in the Rain — Watercolour by Angelin Jeni</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/angelin-jeni/02-kathakali.webp</image:loc><image:caption>Kathakali — Watercolour by Angelin Jeni</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/angelin-jeni/03-blue-bird.webp</image:loc><image:caption>Blue Bird — Watercolour by Angelin Jeni</image:caption></image:image>
@@ -260,7 +260,7 @@
     <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/jeslin/profile-thumb.webp</image:loc><image:caption>Jeslin, student at Kalalaya Fine Arts</image:caption></image:image>
+    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/jeslin/photo-thumb.webp</image:loc><image:caption>Jeslin, student at Kalalaya Fine Arts</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/jeslin/01-kathakali.webp</image:loc><image:caption>Kathakali — Painting by Jeslin</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/jeslin/02-swirling-dancer.webp</image:loc><image:caption>Swirling Dancer — Painting by Jeslin</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/jeslin/03-braided-beauty.webp</image:loc><image:caption>Braided Beauty — Portrait by Jeslin</image:caption></image:image>
@@ -282,7 +282,7 @@
     <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/prakalya/profile-thumb.webp</image:loc><image:caption>Prakalya, student at Kalalaya Fine Arts</image:caption></image:image>
+    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/prakalya/photo-thumb.webp</image:loc><image:caption>Prakalya, student at Kalalaya Fine Arts</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/prakalya/01-pongal-festival.webp</image:loc><image:caption>Pongal Festival — Colour Pencil by Prakalya</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/prakalya/02-sailboat-at-sunset.webp</image:loc><image:caption>Sailboat at Sunset — Crayon by Prakalya</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/prakalya/03-fruit-basket.webp</image:loc><image:caption>Fruit Basket — Colour Pencil by Prakalya</image:caption></image:image>
@@ -298,7 +298,7 @@
     <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/prithwin/profile-thumb.webp</image:loc><image:caption>Prithwin, student at Kalalaya Fine Arts</image:caption></image:image>
+    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/prithwin/photo-thumb.webp</image:loc><image:caption>Prithwin, student at Kalalaya Fine Arts</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/prithwin/01-country-path.webp</image:loc><image:caption>Country Path — Watercolour by Prithwin</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/prithwin/02-lakeside-cottage.webp</image:loc><image:caption>Lakeside Cottage — Watercolour by Prithwin</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/prithwin/03-sunset-over-the-hut.webp</image:loc><image:caption>Sunset Over the Hut — Watercolour by Prithwin</image:caption></image:image>
@@ -315,7 +315,7 @@
     <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/shwetha/profile-thumb.webp</image:loc><image:caption>Shwetha, student at Kalalaya Fine Arts</image:caption></image:image>
+    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/shwetha/photo-thumb.webp</image:loc><image:caption>Shwetha, student at Kalalaya Fine Arts</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/shwetha/01-peacock.webp</image:loc><image:caption>Peacock — Painting by Shwetha</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/shwetha/02-village-belles.webp</image:loc><image:caption>Village Belles — Painting by Shwetha</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/shwetha/03-moonlit-pier.webp</image:loc><image:caption>Moonlit Pier — Painting by Shwetha</image:caption></image:image>
@@ -340,7 +340,7 @@
     <lastmod>2026-11-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/subiksha/profile-thumb.webp</image:loc><image:caption>Subiksha, student at Kalalaya Fine Arts</image:caption></image:image>
+    <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/subiksha/photo-thumb.webp</image:loc><image:caption>Subiksha, student at Kalalaya Fine Arts</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/subiksha/01-peacock.webp</image:loc><image:caption>Peacock — Painting by Subiksha</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/subiksha/02-tribal-women.webp</image:loc><image:caption>Tribal Women — Painting by Subiksha</image:caption></image:image>
     <image:image><image:loc>https://kalalayafinearts.in/assets/images/students/subiksha/03-mountain-train.webp</image:loc><image:caption>Mountain Train — Painting by Subiksha</image:caption></image:image>
