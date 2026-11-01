@@ -324,7 +324,7 @@
                 setTimeout(function () { closeLead(); dlg.querySelector('.booking__panel').classList.remove('is-done'); }, 2600);
                 leadForm.reset();
             };
-            var savedLate = 'Your artwork is downloading! We couldn’t save your details just now — please call or WhatsApp us on +91 98424 34219.';
+            var savedLate = 'Your artwork is downloading! We couldn’t save your details just now — please call or WhatsApp us on +91 98423 43219.';
             sendLead
                 .then(function (res) {
                     if (res.ok) finish(res.message || 'Thank you! Your artwork is downloading.');
