@@ -26,14 +26,13 @@
 <link rel="apple-touch-icon" href="/assets/logo/favicon.png">
 
 <!-- Fonts: Fraunces (headings), Plus Jakarta Sans (UI), Caveat (hand-written accents) -->
+<link rel="preload" as="image" href="/assets/images/hero/hero-watercolour-palettes.webp" imagesrcset="/assets/images/hero/hero-watercolour-palettes-480.webp 480w, /assets/images/hero/hero-watercolour-palettes-800.webp 800w, /assets/images/hero/hero-watercolour-palettes.webp 1200w" imagesizes="(max-width: 768px) 100vw, 50vw" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Caveat:wght@500;700&display=swap"></noscript>
 
-<link rel="stylesheet" href="/css/style.css?v=1.0">
-<link rel="stylesheet" href="/css/responsive.css?v=1.0">
-<link rel="stylesheet" href="/css/motion.css?v=3.1">
-<link rel="stylesheet" href="/css/theme.css?v=3.6">
+<link rel="stylesheet" href="/css/site.css?v=1.1">
 
 <script type="application/ld+json">{
     "@context": "https://schema.org",
@@ -220,7 +219,7 @@
     <div class="navbar">
         <div class="container navbar__inner">
             <a class="brand" href="/" aria-label="Kalalaya Fine Arts — Home">
-                <img src="/assets/logo/kalalaya-logo.png" alt="Kalalaya Fine Arts logo" width="250" height="118">
+                <img src="/assets/logo/kalalaya-logo.webp" alt="Kalalaya Fine Arts logo" width="250" height="118">
             </a>
 
             <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
@@ -293,7 +292,7 @@
         </div>
         <div class="hero__media hero-stage anim-pop">
             <div class="hero-stage__blob" aria-hidden="true"></div>
-            <img class="hero-stage__img" src="/assets/images/hero/hero-watercolour-palettes.jpg" width="794" height="594" alt="Watercolour paint palettes, brushes and colourful swatches" fetchpriority="high">
+            <img srcset="/assets/images/hero/hero-watercolour-palettes-480.webp 480w, /assets/images/hero/hero-watercolour-palettes-800.webp 800w, /assets/images/hero/hero-watercolour-palettes.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" class="hero-stage__img" src="/assets/images/hero/hero-watercolour-palettes.webp" width="794" height="594" alt="Watercolour paint palettes, brushes and colourful swatches" fetchpriority="high">
             <!-- Floating art tools (parallax) -->
             <span class="float-tool float-tool--palette" data-depth="28" aria-hidden="true">
                 <svg viewBox="0 0 64 64"><path d="M32 6C17 6 6 16.5 6 30c0 12 9.5 22 22 22 3 0 4.5-1.6 4.5-3.6 0-2.5-2.3-3.3-2.3-5.6 0-2.6 2.2-4 5-4H41c9.5 0 17-6 17-15C58 13.5 46.5 6 32 6z" fill="#fff" stroke="#1B2330" stroke-width="2"/><circle cx="20" cy="22" r="4.5" fill="#FF6B4A"/><circle cx="32" cy="16" r="4.5" fill="#FFB703"/><circle cx="44" cy="21" r="4.5" fill="#3A86FF"/><circle cx="17" cy="35" r="4.5" fill="#06D6A0"/></svg>
@@ -353,12 +352,12 @@
                 <div class="easel__group">
                     <span class="easel__label">Brush</span>
                     <div class="easel__tools" role="radiogroup" aria-label="Brush">
-                                                <button type="button" class="tool" role="radio" aria-checked="false" data-brush="pencil"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.5-5.5L16 4l4 4L9.5 18.5z"/><path d="M14 6l4 4"/></svg><span>Pencil</span></button>
-                                                <button type="button" class="tool" role="radio" aria-checked="true" data-brush="marker"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 15l-4 5h5l2-2"/><path d="M8 14l7-10 5 5-10 7z"/></svg><span>Marker</span></button>
-                                                <button type="button" class="tool" role="radio" aria-checked="false" data-brush="water"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg><span>Watercolour</span></button>
-                                                <button type="button" class="tool" role="radio" aria-checked="false" data-brush="crayon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19l3-1 11-11-2-2L6 16z"/><path d="M14 6l3 3M4 20h4"/></svg><span>Crayon</span></button>
-                                                <button type="button" class="tool" role="radio" aria-checked="false" data-brush="spray"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="9" width="8" height="12" rx="2"/><path d="M10 9V6h4v3M12 3h.01M16 4h.01M18 2h.01M18 6h.01"/></svg><span>Spray</span></button>
-                                                <button type="button" class="tool" role="radio" aria-checked="false" data-brush="eraser"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 21h10M4 14l9-9 7 7-7 7H8z"/><path d="M9 9l7 7"/></svg><span>Eraser</span></button>
+                                                <button type="button" class="tool" role="radio" aria-checked="false" data-brush="pencil" aria-label="Pencil"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.5-5.5L16 4l4 4L9.5 18.5z"/><path d="M14 6l4 4"/></svg><span>Pencil</span></button>
+                                                <button type="button" class="tool" role="radio" aria-checked="true" data-brush="marker" aria-label="Marker"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 15l-4 5h5l2-2"/><path d="M8 14l7-10 5 5-10 7z"/></svg><span>Marker</span></button>
+                                                <button type="button" class="tool" role="radio" aria-checked="false" data-brush="water" aria-label="Watercolour"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 7 6 11a6 6 0 0 1-12 0c0-4 6-11 6-11z"/></svg><span>Watercolour</span></button>
+                                                <button type="button" class="tool" role="radio" aria-checked="false" data-brush="crayon" aria-label="Crayon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19l3-1 11-11-2-2L6 16z"/><path d="M14 6l3 3M4 20h4"/></svg><span>Crayon</span></button>
+                                                <button type="button" class="tool" role="radio" aria-checked="false" data-brush="spray" aria-label="Spray"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="9" width="8" height="12" rx="2"/><path d="M10 9V6h4v3M12 3h.01M16 4h.01M18 2h.01M18 6h.01"/></svg><span>Spray</span></button>
+                                                <button type="button" class="tool" role="radio" aria-checked="false" data-brush="eraser" aria-label="Eraser"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 21h10M4 14l9-9 7 7-7 7H8z"/><path d="M9 9l7 7"/></svg><span>Eraser</span></button>
                                             </div>
                 </div>
 
@@ -455,7 +454,7 @@
             <div class="age-panels">
                                 <article class="age-panel is-active" data-panel="0" aria-live="polite">
                     <div class="age-panel__media">
-                        <img src="/assets/images/courses/detail-kids.jpg" width="380" height="290" alt="A teacher helping young children with their drawings" loading="lazy">
+                        <img srcset="/assets/images/courses/detail-kids-480.webp 480w, /assets/images/courses/detail-kids.webp 750w" sizes="(max-width: 768px) 100vw, 50vw" src="/assets/images/courses/detail-kids.webp" width="380" height="290" alt="A teacher helping young children with their drawings" loading="lazy">
                     </div>
                     <div class="age-panel__body">
                         <span class="eyebrow">Kids (Ages 5-7 Yrs)</span>
@@ -473,7 +472,7 @@
                 </article>
                                 <article class="age-panel" data-panel="1" hidden aria-live="polite">
                     <div class="age-panel__media">
-                        <img src="/assets/images/courses/detail-drawing.jpg" width="380" height="290" alt="A pencil portrait being drawn in class" loading="lazy">
+                        <img src="/assets/images/courses/detail-drawing.webp" width="380" height="290" alt="A pencil portrait being drawn in class" loading="lazy">
                     </div>
                     <div class="age-panel__body">
                         <span class="eyebrow">Students (8-12 Yrs)</span>
@@ -491,7 +490,7 @@
                 </article>
                                 <article class="age-panel" data-panel="2" hidden aria-live="polite">
                     <div class="age-panel__media">
-                        <img src="/assets/images/courses/detail-painting.jpg" width="380" height="290" alt="A student painting a sunset in acrylics" loading="lazy">
+                        <img src="/assets/images/courses/detail-painting.webp" width="380" height="290" alt="A student painting a sunset in acrylics" loading="lazy">
                     </div>
                     <div class="age-panel__body">
                         <span class="eyebrow">Students (13-18 Yrs)</span>
@@ -509,7 +508,7 @@
                 </article>
                                 <article class="age-panel" data-panel="3" hidden aria-live="polite">
                     <div class="age-panel__media">
-                        <img src="/assets/images/courses/detail-professional.jpg" width="380" height="290" alt="Fashion illustration sketches on paper" loading="lazy">
+                        <img src="/assets/images/courses/detail-professional.webp" width="380" height="290" alt="Fashion illustration sketches on paper" loading="lazy">
                     </div>
                     <div class="age-panel__body">
                         <span class="eyebrow">Professional Courses</span>
@@ -527,7 +526,7 @@
                 </article>
                                 <article class="age-panel" data-panel="4" hidden aria-live="polite">
                     <div class="age-panel__media">
-                        <img src="/assets/images/courses/detail-glass.jpg" width="380" height="290" alt="Stained glass panel with white and pink flowers" loading="lazy">
+                        <img src="/assets/images/courses/detail-glass.webp" width="380" height="290" alt="Stained glass panel with white and pink flowers" loading="lazy">
                     </div>
                     <div class="age-panel__body">
                         <span class="eyebrow">Short Term Courses</span>
@@ -552,7 +551,7 @@
 <section class="section home-about">
     <div class="container split">
         <div class="media-frame reveal">
-            <img src="/assets/images/about/brushes-table.jpg" width="668" height="424" alt="Students drawing at their desks in the Kalalaya classroom" loading="lazy">
+            <img srcset="/assets/images/about/brushes-table-480.webp 480w, /assets/images/about/brushes-table.webp 1000w" sizes="(max-width: 768px) 100vw, 50vw" src="/assets/images/about/brushes-table.webp" width="668" height="424" alt="Students drawing at their desks in the Kalalaya classroom" loading="lazy">
         </div>
         <div class="reveal">
             <span class="eyebrow">About Kalalaya</span>
@@ -580,7 +579,7 @@
     </div>
 </section>
 
-<script>window.KALALAYA_GALLERY = [{"img": "/assets/images/students/ajay/01-krishna-with-the-calf.jpg", "title": "Krishna with the Calf", "name": "Ajay", "category": "Watercolour", "slug": "watercolour"}, {"img": "/assets/images/students/angelin-jeni/01-umbrellas-in-the-rain.jpg", "title": "Umbrellas in the Rain", "name": "Angelin Jeni", "category": "Watercolour", "slug": "watercolour"}, {"img": "/assets/images/students/prakalya/01-pongal-festival.jpg", "title": "Pongal Festival", "name": "Prakalya", "category": "Colour Pencil", "slug": "colour-pencil"}, {"img": "/assets/images/students/shwetha/01-peacock.jpg", "title": "Peacock", "name": "Shwetha", "category": "Painting", "slug": "painting"}, {"img": "/assets/images/students/subiksha/02-tribal-women.jpg", "title": "Tribal Women", "name": "Subiksha", "category": "Painting", "slug": "painting"}, {"img": "/assets/images/students/ajay/02-kathakali.jpg", "title": "Kathakali", "name": "Ajay", "category": "Watercolour", "slug": "watercolour"}, {"img": "/assets/images/students/angelin-jeni/03-blue-bird.jpg", "title": "Blue Bird", "name": "Angelin Jeni", "category": "Watercolour", "slug": "watercolour"}, {"img": "/assets/images/students/prakalya/02-sailboat-at-sunset.jpg", "title": "Sailboat at Sunset", "name": "Prakalya", "category": "Crayon", "slug": "crayon"}, {"img": "/assets/images/students/shwetha/02-village-belles.jpg", "title": "Village Belles", "name": "Shwetha", "category": "Painting", "slug": "painting"}, {"img": "/assets/images/students/subiksha/03-mountain-train.jpg", "title": "Mountain Train", "name": "Subiksha", "category": "Painting", "slug": "painting"}, {"img": "/assets/images/students/ajay/03-lion.jpg", "title": "Lion", "name": "Ajay", "category": "Watercolour", "slug": "watercolour"}, {"img": "/assets/images/students/angelin-jeni/05-save-the-earth.jpg", "title": "Save the Earth", "name": "Angelin Jeni", "category": "Poster Painting", "slug": "poster-painting"}, {"img": "/assets/images/students/shwetha/03-moonlit-pier.jpg", "title": "Moonlit Pier", "name": "Shwetha", "category": "Painting", "slug": "painting"}, {"img": "/assets/images/students/subiksha/05-kettle-and-bottle.jpg", "title": "Kettle and Bottle", "name": "Subiksha", "category": "Still Life", "slug": "still-life"}, {"img": "/assets/images/students/ajay/05-kerala-house.jpg", "title": "Kerala House", "name": "Ajay", "category": "Watercolour", "slug": "watercolour"}, {"img": "/assets/images/students/angelin-jeni/06-owl-at-night.jpg", "title": "Owl at Night", "name": "Angelin Jeni", "category": "Watercolour", "slug": "watercolour"}, {"img": "/assets/images/students/shwetha/08-giraffe.jpg", "title": "Giraffe", "name": "Shwetha", "category": "Painting", "slug": "painting"}, {"img": "/assets/images/students/subiksha/08-family-portrait.jpg", "title": "Family Portrait", "name": "Subiksha", "category": "Pencil Drawing", "slug": "pencil-drawing"}];</script>
+<script>window.KALALAYA_GALLERY = [{"img": "/assets/images/students/ajay/01-krishna-with-the-calf-thumb.webp", "title": "Krishna with the Calf", "name": "Ajay", "category": "Watercolour", "slug": "watercolour", "full": "/assets/images/students/ajay/01-krishna-with-the-calf.webp"}, {"img": "/assets/images/students/angelin-jeni/01-umbrellas-in-the-rain-thumb.webp", "title": "Umbrellas in the Rain", "name": "Angelin Jeni", "category": "Watercolour", "slug": "watercolour", "full": "/assets/images/students/angelin-jeni/01-umbrellas-in-the-rain.webp"}, {"img": "/assets/images/students/prakalya/01-pongal-festival-thumb.webp", "title": "Pongal Festival", "name": "Prakalya", "category": "Colour Pencil", "slug": "colour-pencil", "full": "/assets/images/students/prakalya/01-pongal-festival.webp"}, {"img": "/assets/images/students/shwetha/01-peacock-thumb.webp", "title": "Peacock", "name": "Shwetha", "category": "Painting", "slug": "painting", "full": "/assets/images/students/shwetha/01-peacock.webp"}, {"img": "/assets/images/students/subiksha/02-tribal-women-thumb.webp", "title": "Tribal Women", "name": "Subiksha", "category": "Painting", "slug": "painting", "full": "/assets/images/students/subiksha/02-tribal-women.webp"}, {"img": "/assets/images/students/ajay/02-kathakali-thumb.webp", "title": "Kathakali", "name": "Ajay", "category": "Watercolour", "slug": "watercolour", "full": "/assets/images/students/ajay/02-kathakali.webp"}, {"img": "/assets/images/students/angelin-jeni/03-blue-bird-thumb.webp", "title": "Blue Bird", "name": "Angelin Jeni", "category": "Watercolour", "slug": "watercolour", "full": "/assets/images/students/angelin-jeni/03-blue-bird.webp"}, {"img": "/assets/images/students/prakalya/02-sailboat-at-sunset-thumb.webp", "title": "Sailboat at Sunset", "name": "Prakalya", "category": "Crayon", "slug": "crayon", "full": "/assets/images/students/prakalya/02-sailboat-at-sunset.webp"}, {"img": "/assets/images/students/shwetha/02-village-belles-thumb.webp", "title": "Village Belles", "name": "Shwetha", "category": "Painting", "slug": "painting", "full": "/assets/images/students/shwetha/02-village-belles.webp"}, {"img": "/assets/images/students/subiksha/03-mountain-train-thumb.webp", "title": "Mountain Train", "name": "Subiksha", "category": "Painting", "slug": "painting", "full": "/assets/images/students/subiksha/03-mountain-train.webp"}, {"img": "/assets/images/students/ajay/03-lion-thumb.webp", "title": "Lion", "name": "Ajay", "category": "Watercolour", "slug": "watercolour", "full": "/assets/images/students/ajay/03-lion.webp"}, {"img": "/assets/images/students/angelin-jeni/05-save-the-earth-thumb.webp", "title": "Save the Earth", "name": "Angelin Jeni", "category": "Poster Painting", "slug": "poster-painting", "full": "/assets/images/students/angelin-jeni/05-save-the-earth.webp"}, {"img": "/assets/images/students/shwetha/03-moonlit-pier-thumb.webp", "title": "Moonlit Pier", "name": "Shwetha", "category": "Painting", "slug": "painting", "full": "/assets/images/students/shwetha/03-moonlit-pier.webp"}, {"img": "/assets/images/students/subiksha/05-kettle-and-bottle-thumb.webp", "title": "Kettle and Bottle", "name": "Subiksha", "category": "Still Life", "slug": "still-life", "full": "/assets/images/students/subiksha/05-kettle-and-bottle.webp"}, {"img": "/assets/images/students/ajay/05-kerala-house-thumb.webp", "title": "Kerala House", "name": "Ajay", "category": "Watercolour", "slug": "watercolour", "full": "/assets/images/students/ajay/05-kerala-house.webp"}, {"img": "/assets/images/students/angelin-jeni/06-owl-at-night-thumb.webp", "title": "Owl at Night", "name": "Angelin Jeni", "category": "Watercolour", "slug": "watercolour", "full": "/assets/images/students/angelin-jeni/06-owl-at-night.webp"}, {"img": "/assets/images/students/shwetha/08-giraffe-thumb.webp", "title": "Giraffe", "name": "Shwetha", "category": "Painting", "slug": "painting", "full": "/assets/images/students/shwetha/08-giraffe.webp"}, {"img": "/assets/images/students/subiksha/08-family-portrait-thumb.webp", "title": "Family Portrait", "name": "Subiksha", "category": "Pencil Drawing", "slug": "pencil-drawing", "full": "/assets/images/students/subiksha/08-family-portrait.webp"}];</script>
 <!-- FLOATING STUDENT GALLERY (built by js/home.js from the student-gallery/ folder) -->
 <section class="section float-gallery" aria-labelledby="fg-title">
     <div class="container">
@@ -605,7 +604,7 @@
 <section class="section" style="padding-top:0">
     <div class="container showcase">
         <div class="showcase-gallery reveal">
-            <img src="/assets/images/gallery/landscape-canvas.jpg" width="500" height="394" alt="A student painting with watercolours in the Kalalaya classroom" loading="lazy">
+            <img srcset="/assets/images/gallery/landscape-canvas-480.webp 480w, /assets/images/gallery/landscape-canvas.webp 800w" sizes="(max-width: 768px) 100vw, 50vw" src="/assets/images/gallery/landscape-canvas.webp" width="500" height="394" alt="A student painting with watercolours in the Kalalaya classroom" loading="lazy">
             <div class="showcase-gallery__copy">
                 <span class="eyebrow">Student Gallery</span>
                 <h2 class="h-sub">Art That Inspires</h2>
@@ -651,13 +650,13 @@
         </div>
         <ul class="blog-grid">
                         <li class="card blog-card reveal" style="--d:0"><a href="/blog/art-supplies-for-beginners">
-                <img src="/assets/images/hero/brushes-palette.jpg" alt="" width="600" height="360" loading="lazy">                <div class="blog-card__body"><p class="post-meta">2 min read</p><h3 class="h-card">Basic Art Supplies Every Beginner Needs (and What to Skip)</h3><span class="arrow-link">Read article <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+                <img srcset="/assets/images/hero/brushes-palette-480.webp 480w, /assets/images/hero/brushes-palette-800.webp 800w, /assets/images/hero/brushes-palette.webp 1200w" sizes="(max-width: 768px) 100vw, 50vw" src="/assets/images/hero/brushes-palette.webp" alt="" width="600" height="360" loading="lazy">                <div class="blog-card__body"><p class="post-meta">2 min read</p><h3 class="h-card">Basic Art Supplies Every Beginner Needs (and What to Skip)</h3><span class="arrow-link">Read article <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
             </a></li>
                         <li class="card blog-card reveal" style="--d:1"><a href="/blog/best-age-to-start-art-classes">
-                <img src="/assets/images/courses/cat-kids.jpg" alt="Young children smiling at their desks during a Kalalaya art class" width="600" height="360" loading="lazy">                <div class="blog-card__body"><p class="post-meta">2 min read</p><h3 class="h-card">What Is the Best Age to Start Art Classes?</h3><span class="arrow-link">Read article <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+                <img srcset="/assets/images/courses/cat-kids-480.webp 480w, /assets/images/courses/cat-kids.webp 700w" sizes="(max-width: 768px) 100vw, 50vw" src="/assets/images/courses/cat-kids.webp" alt="Young children smiling at their desks during a Kalalaya art class" width="600" height="360" loading="lazy">                <div class="blog-card__body"><p class="post-meta">2 min read</p><h3 class="h-card">What Is the Best Age to Start Art Classes?</h3><span class="arrow-link">Read article <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
             </a></li>
                         <li class="card blog-card reveal" style="--d:2"><a href="/blog/drawing-or-painting-where-to-start">
-                <img src="/assets/images/courses/detail-drawing.jpg" alt="A pencil portrait being drawn in class" width="600" height="360" loading="lazy">                <div class="blog-card__body"><p class="post-meta">2 min read</p><h3 class="h-card">Drawing or Painting: Which Should a Beginner Start With?</h3><span class="arrow-link">Read article <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
+                <img src="/assets/images/courses/detail-drawing.webp" alt="A pencil portrait being drawn in class" width="600" height="360" loading="lazy">                <div class="blog-card__body"><p class="post-meta">2 min read</p><h3 class="h-card">Drawing or Painting: Which Should a Beginner Start With?</h3><span class="arrow-link">Read article <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></div>
             </a></li>
                     </ul>
     </div>
@@ -686,7 +685,7 @@
 
     <div class="container footer-grid footer-grid--simple">
         <a href="/" class="footer-brand__logo" aria-label="Kalalaya Fine Arts — Home">
-            <img src="/assets/logo/kalalaya-logo.png" alt="Kalalaya Fine Arts logo" width="250" height="118" loading="lazy">
+            <img src="/assets/logo/kalalaya-logo.webp" alt="Kalalaya Fine Arts logo" width="250" height="118" loading="lazy">
         </a>
         <nav aria-label="Footer"><ul class="footer-inline">
             <li><a href="/">Home</a></li><li><a href="/about">About Us</a></li><li><a href="/courses">Courses</a></li><li><a href="/achievements">Achievements</a></li><li><a href="/events">Events</a></li><li><a href="/gallery">Gallery</a></li><li><a href="/contact">Contact</a></li>        </ul></nav>
@@ -706,7 +705,14 @@
     </nav>
 </footer>
 
-<a class="whatsapp-float" href="https://wa.me/919842343219" target="_blank" rel="noopener" aria-label="Chat with Kalalaya Fine Arts on WhatsApp"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.7 11.7 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg></a>
+<div class="wa-float">
+    <div class="wa-float__menu" id="wa-menu" hidden>
+        <p>Chat with us on WhatsApp</p>
+        <a href="https://wa.me/919842343219" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.7 11.7 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg><span>+91 98423 43219</span></a>
+        <a href="https://wa.me/919384264366" target="_blank" rel="noopener"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.7 11.7 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg><span>+91 93842 64366</span></a>
+    </div>
+    <a class="whatsapp-float" href="https://wa.me/919842343219" target="_blank" rel="noopener" aria-label="Chat with Kalalaya Fine Arts on WhatsApp" aria-controls="wa-menu" aria-expanded="false" data-wa-toggle><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.7 11.7 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg></a>
+</div>
 
 <!-- Lightbox (shared by gallery, student gallery and achievements) -->
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
@@ -726,7 +732,7 @@
         <span class="eyebrow">Reserve a Seat</span>
         <h2 class="h-sub" id="booking-title">Book a Class at Kalalaya</h2>
         <ol class="booking__steps" aria-hidden="true"><li class="is-on">Course</li><li>Student</li><li>Timing</li></ol>
-        <form class="booking__form" novalidate data-whatsapp="919842343219">
+        <form class="booking__form" novalidate data-whatsapp="919842343219,919384264366">
             <fieldset class="booking__step" data-step="0">
                 <legend class="visually-hidden">Choose a course</legend>
                 <div class="choice-grid">
@@ -759,16 +765,17 @@
             <div class="booking__nav">
                 <button class="btn btn--outline btn--sm" type="button" data-back hidden>Back</button>
                 <button class="btn btn--primary btn--sm" type="button" data-next>Next <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-                <button class="btn btn--primary btn--sm" type="submit" data-send hidden><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.7 11.7 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg> Send on WhatsApp</button>
+                <button class="btn btn--primary btn--sm" type="submit" data-send data-wa="919842343219" hidden><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.7 11.7 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg> 98423 43219</button>
+                <button class="btn btn--primary btn--sm" type="submit" data-send data-wa="919384264366" hidden><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.1 5.1 0 0 0 1.1 2.7 11.7 11.7 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg> 93842 64366</button>
             </div>
-            <p class="booking__note">This opens WhatsApp with your details filled in, ready to send to Kalalaya. Prefer email? <a href="/contact#enquiry">Use the enquiry form</a>.</p>
+            <p class="booking__note">Choose a number — WhatsApp opens with your details filled in, ready to send to Kalalaya. Prefer email? <a href="/contact#enquiry">Use the enquiry form</a>.</p>
         </form>
     </div>
 </div>
 
-<script src="/js/main.js?v=1.2" defer></script>
-<script src="/js/motion.js?v=3.1" defer></script>
-<script src="/js/home.js?v=1.1" defer></script>
+<script src="/js/main.js?v=2.0" defer></script>
+<script src="/js/motion.js?v=2.1" defer></script>
+<script src="/js/home.js?v=2.0" defer></script>
 <script src="/js/easel.js?v=1.2" defer></script>
 </body>
 </html>

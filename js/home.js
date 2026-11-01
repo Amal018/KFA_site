@@ -51,7 +51,7 @@
     if (fg && pick.length) {
         var tile = function (i) {
             var label = i.title + (i.name ? ' by ' + i.name : '');
-            return '<button type="button" class="float-tile" data-lightbox="' + K.esc(i.img) + '" data-caption="' + K.esc(i.title + (i.name ? ' — ' + i.name : '')) + '" data-sub="' + K.esc(i.category) + '" aria-label="View larger: ' + K.esc(label) + '">' +
+            return '<button type="button" class="float-tile" data-lightbox="' + K.esc(i.full || i.img) + '" data-caption="' + K.esc(i.title + (i.name ? ' — ' + i.name : '')) + '" data-sub="' + K.esc(i.category) + '" aria-label="View larger: ' + K.esc(label) + '">' +
                 '<img src="' + K.esc(i.img) + '" alt="' + K.esc(label) + '" loading="lazy" width="260" height="200">' +
                 '<span class="float-tile__tip"><b>' + K.esc(i.name || i.title) + '</b>' + K.esc((i.name ? i.title + ' · ' : '') + i.category) + '</span></button>';
         };

@@ -19,14 +19,14 @@
         };
         win.addEventListener('scroll', setBar, { passive: true });
         win.addEventListener('resize', setBar);
-        setBar();
+        requestAnimationFrame(setBar);
     }
 
     /* ---------- sticky offset = real header height (used by .course-tabs) ---------- */
     var siteHeader = doc.querySelector('.site-header');
     if (siteHeader) {
         var setTop = function () { doc.documentElement.style.setProperty('--sticky-top', siteHeader.offsetHeight + 'px'); };
-        win.addEventListener('resize', setTop); win.addEventListener('load', setTop); setTop();
+        win.addEventListener('resize', setTop); win.addEventListener('load', setTop); requestAnimationFrame(setTop);
         if (doc.fonts && doc.fonts.ready) doc.fonts.ready.then(setTop);
     }
 
@@ -123,12 +123,22 @@
         targets.forEach(function (t) { if (t) spy.observe(t); });
     });
 
+    /* ---------- floating WhatsApp menu: choose one of the two numbers ---------- */
+    var waToggle = doc.querySelector('[data-wa-toggle]'), waMenu = doc.getElementById('wa-menu');
+    if (waToggle && waMenu) {
+        var setWa = function (open) { waMenu.hidden = !open; waToggle.setAttribute('aria-expanded', open ? 'true' : 'false'); };
+        waToggle.addEventListener('click', function (e) { e.preventDefault(); setWa(waMenu.hidden); if (!waMenu.hidden) waMenu.querySelector('a').focus(); });
+        doc.addEventListener('click', function (e) { if (!waMenu.hidden && !e.target.closest('.wa-float')) setWa(false); });
+        doc.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !waMenu.hidden) { setWa(false); waToggle.focus(); } });
+        waMenu.addEventListener('click', function (e) { if (e.target.closest('a')) setWa(false); });
+    }
+
     /* ---------- seat booking dialog → WhatsApp ---------- */
     var dlg = doc.getElementById('booking');
     if (dlg) {
         var form = dlg.querySelector('form'), steps = [].slice.call(form.querySelectorAll('.booking__step'));
         var marks = [].slice.call(dlg.querySelectorAll('.booking__steps li'));
-        var back = form.querySelector('[data-back]'), next = form.querySelector('[data-next]'), send = form.querySelector('[data-send]');
+        var back = form.querySelector('[data-back]'), next = form.querySelector('[data-next]'), sends = [].slice.call(form.querySelectorAll('[data-send]'));
         var err = form.querySelector('.booking__error'), step = 0, lastFocus = null;
         // order matches includes/courses.php ids → config course_options
         var COURSE_IDS = ['kids', 'young-artists', 'teen-artists', 'professional', 'short-term'];
@@ -137,7 +147,7 @@
             step = n; err.textContent = '';
             steps.forEach(function (s, i) { s.hidden = i !== n; });
             marks.forEach(function (m, i) { m.classList.toggle('is-on', i <= n); });
-            back.hidden = n === 0; next.hidden = n === steps.length - 1; send.hidden = !next.hidden;
+            back.hidden = n === 0; next.hidden = n === steps.length - 1; sends.forEach(function (b) { b.hidden = !next.hidden; });
             var f = steps[n].querySelector('input:checked, input, textarea');
             if (f) f.focus({ preventScroll: true });
         };
@@ -176,7 +186,7 @@
         dlg.querySelector('.booking__close').addEventListener('click', close);
         dlg.addEventListener('click', function (e) { if (e.target === dlg) close(); });
         form.addEventListener('keydown', function (e) {
-            if (e.key === 'Enter' && e.target.tagName === 'INPUT' && send.hidden) { e.preventDefault(); if (valid()) go(step + 1); }
+            if (e.key === 'Enter' && e.target.tagName === 'INPUT' && sends[0].hidden) { e.preventDefault(); if (valid()) go(step + 1); }
         });
         doc.addEventListener('keydown', function (e) {
             if (dlg.hidden) return;
@@ -201,7 +211,8 @@
                 'Preferred timing: ' + v('timing'),
                 v('note') ? 'Note: ' + v('note') : ''
             ].filter(function (l, i) { return l || i === 1; });
-            win.open('https://wa.me/' + form.getAttribute('data-whatsapp') + '?text=' + encodeURIComponent(lines.join('\n')), '_blank', 'noopener');
+            var number = (e.submitter && e.submitter.getAttribute('data-wa')) || form.getAttribute('data-whatsapp').split(',')[0];
+            win.open('https://wa.me/' + number + '?text=' + encodeURIComponent(lines.join('\n')), '_blank', 'noopener');
             close();
         });
     }

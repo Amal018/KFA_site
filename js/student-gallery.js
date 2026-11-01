@@ -57,7 +57,7 @@
             var alt = (a.title || 'Artwork') + (a.category ? ' — ' + a.category : '') + ' by ' + s.name;
             return '<li class="reveal"><figure class="art-card">' +
                 '<button class="art-card__img" type="button" data-index="' + (start + n) + '" aria-label="View larger: ' + K.esc(a.title) + '">' +
-                '<img src="' + K.esc(a.image) + '" alt="' + K.esc(alt) + '" width="500" height="340" loading="lazy"></button>' +
+                '<img src="' + K.esc(a.thumb || a.image) + '" alt="' + K.esc(alt) + '" width="500" height="340" loading="lazy"></button>' +
                 '<figcaption><h3>' + K.esc(a.title) + '</h3><p>' + K.esc(a.category) + '</p></figcaption></figure></li>';
         }).join('');
         K.observeReveal(grid);

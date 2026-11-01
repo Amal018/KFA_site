@@ -85,7 +85,7 @@
     /* ---------- header shadow on scroll ---------- */
     var header = doc.querySelector('.site-header');
     var onScroll = function () { if (header) header.classList.toggle('is-scrolled', window.scrollY > 8); };
-    window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true }); requestAnimationFrame(onScroll);
 
     /* ---------- reveal on scroll ---------- */
     K.observeReveal = function (root) {
